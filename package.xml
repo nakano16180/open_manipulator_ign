@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>open_manipulator_ign</name>
+  <version>0.0.0</version>
+  <description>The open_manipulator_ign package</description>
+  <license>Apache 2.0</license>
+  <!-- One maintainer tag required, multiple allowed, one person per tag -->
+  <!-- Example:  -->
+  <!-- <maintainer email="jane.doe@example.com">Jane Doe</maintainer> -->
+  <maintainer email="kaito@todo.todo">kaito</maintainer>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>ignition-gazebo3</depend>
+  <depend>roscpp</depend>
+  <depend>std_msgs</depend>
+  <depend>gazebo_ros</depend>
+  <depend>gazebo_ros_control</depend>
+  <depend>controller_manager</depend>
+  <depend>xacro</depend>
+  <depend>urdf</depend>
+  
+  <exec_depend>image_transport_plugins</exec_depend>
+  <exec_depend>ros_ign_bridge</exec_depend>
+  <exec_depend>ros_ign_gazebo</exec_depend>
+  <exec_depend>ros_ign_image</exec_depend>
+  <!-- See https://github.com/osrf/ros_ign/issues/40 -->
+  <!--exec_depend>ros_ign_point_cloud</exec_depend-->
+  <exec_depend>rqt_image_view</exec_depend>
+  <exec_depend>rqt_plot</exec_depend>
+  <exec_depend>rviz</exec_depend>
+
+</package>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<launch>
+  
+  <arg name="use_robot_name" default="open_manipulator"
+       doc="Must match the robotNamespace tag in the gazebo description file"/>
+  <arg name="world" default="empty"/>
+  <arg name="ign_args" default=""/>
+
+  <include file="$(find ros_ign_gazebo)/launch/ign_gazebo.launch">
+    <arg name="ign_args" value="-r -v 3 $(find open_manipulator_ign)/worlds/open_manipulator.sdf"/>
+  </include>
+
+  <!-- ros_control robotis manipulator launch file -->
+  <!--<include file="$(find open_manipulator_ign)/launch/open_manipulator_controller.launch">
+    <arg name="use_robot_name" value="$(arg use_robot_name)"/>
+  </include>-->
+</launch>
