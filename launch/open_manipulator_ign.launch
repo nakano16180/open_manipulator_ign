@@ -7,8 +7,23 @@
   <arg name="ign_args" default=""/>
 
   <include file="$(find ros_ign_gazebo)/launch/ign_gazebo.launch">
-    <arg name="ign_args" value="-r -v 3 $(find open_manipulator_ign)/worlds/open_manipulator.sdf"/>
+    <arg name="ign_args" value="$(arg ign_args) $(arg world).sdf"/>
   </include>
+
+  <!-- URDF from param, package model -->
+  <param name="robot_description" textfile="$(find open_manipulator_ign)/worlds/openManipulator/open_manipulator.urdf" />
+
+  <node
+    pkg="ros_ign_gazebo"
+    type="create"
+    name="$(anon ros_ign_create_manipulator)"
+    output="screen"
+    args="-world $(arg world) -param robot_description -name spawned -allow_renaming true -z 0">
+  </node>
+
+  <!--<include file="$(find ros_ign_gazebo)/launch/ign_gazebo.launch">
+    <arg name="ign_args" value="-r -v 3 $(find open_manipulator_ign)/worlds/open_manipulator.sdf"/>
+  </include>-->
 
   <!-- ros_control robotis manipulator launch file -->
   <!--<include file="$(find open_manipulator_ign)/launch/open_manipulator_controller.launch">

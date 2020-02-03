@@ -5,7 +5,7 @@
   <!-- Import all Gazebo-customization elements, including Gazebo colors -->
   <!--  <xacro:include filename="$(find open_manipulator_description)/urdf/open_manipulator.gazebo.xacro" />-->
   <!-- Import Rviz colors -->
-  <xacro:include filename="$(find open_manipulator_ign)/worlds/materials.xacro" />
+  <xacro:include filename="$(find open_manipulator_ign)/worlds/openManipulator/materials.xacro" />
 
   <!-- Transmission macro -->
   <!--<xacro:macro name="SimpleTransmission" params="joint n">
@@ -37,7 +37,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://open_manipulator_ign/models/openmanipulator/meshes/chain_link1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey"/>
     </visual>
@@ -45,7 +45,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://open_manipulator_ign/models/openmanipulator/meshes/chain_link1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
 
@@ -83,7 +83,7 @@
     <visual>
       <origin xyz="0 0 0.019" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://open_manipulator_ign/models/openmanipulator/meshes/chain_link2.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey"/>
     </visual>
@@ -91,7 +91,7 @@
     <collision>
       <origin xyz="0 0 0.019" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://open_manipulator_ign/models/openmanipulator/meshes/chain_link2.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
 
@@ -129,7 +129,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://open_manipulator_ign/models/openmanipulator/meshes/chain_link3.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey"/>
     </visual>
@@ -137,7 +137,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://open_manipulator_ign/models/openmanipulator/meshes/chain_link3.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
 
@@ -175,7 +175,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://open_manipulator_ign/models/openmanipulator/meshes/chain_link4.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link4.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey"/>
     </visual>
@@ -183,7 +183,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://open_manipulator_ign/models/openmanipulator/meshes/chain_link4.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link4.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
 
@@ -221,7 +221,7 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://open_manipulator_ign/models/openmanipulator/meshes/chain_link5.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link5.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey"/>
     </visual>
@@ -229,7 +229,7 @@
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://open_manipulator_ign/models/openmanipulator/meshes/chain_link5.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link5.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
 
@@ -255,7 +255,7 @@
     <visual>
       <origin xyz="0.0 0.0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://open_manipulator_ign/models/openmanipulator/meshes/chain_link_grip_l.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link_grip_l.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey"/>
     </visual>
@@ -263,7 +263,7 @@
     <collision>
       <origin xyz="0.0 0.0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://open_manipulator_ign/models/openmanipulator/meshes/chain_link_grip_l.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link_grip_l.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
 
@@ -301,7 +301,7 @@
     <visual>
       <origin xyz="0.0 -0.0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://open_manipulator_ign/models/openmanipulator/meshes/chain_link_grip_r.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link_grip_r.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey"/>
     </visual>
@@ -309,7 +309,7 @@
     <collision>
       <origin xyz="0.0 -0.0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://open_manipulator_ign/models/openmanipulator/meshes/chain_link_grip_r.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link_grip_r.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
 
