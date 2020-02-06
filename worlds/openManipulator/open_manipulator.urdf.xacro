@@ -5,8 +5,38 @@
   <!-- Import all Gazebo-customization elements, including Gazebo colors -->
   <!--  <xacro:include filename="$(find open_manipulator_description)/urdf/open_manipulator.gazebo.xacro" />-->
   <!-- Import Rviz colors -->
-  <xacro:include filename="$(find open_manipulator_ign)/worlds/openManipulator/materials.xacro" />
+  <!--<xacro:include filename="$(find open_manipulator_ign)/worlds/openManipulator/materials.xacro" />-->
+  <material name="black">
+    <color rgba="0.0 0.0 0.0 1.0"/>
+  </material>
 
+  <material name="white">
+    <color rgba="1.0 1.0 1.0 1.0"/>
+  </material>
+
+  <material name="red">
+    <color rgba="0.8 0.0 0.0 1.0"/>
+  </material>
+
+  <material name="blue">
+    <color rgba="0.0 0.0 0.8 1.0"/>
+  </material>
+
+  <material name="green">
+    <color rgba="0.0 0.8 0.0 1.0"/>
+  </material>
+
+  <material name="grey">
+    <color rgba="0.5 0.5 0.5 1.0"/>
+  </material>
+
+  <material name="orange">
+    <color rgba="${255/255} ${108/255} ${10/255} 1.0"/>
+  </material>
+
+  <material name="brown">
+    <color rgba="${222/255} ${207/255} ${195/255} 1.0"/>
+  </material>
   <!-- Transmission macro -->
   <!--<xacro:macro name="SimpleTransmission" params="joint n">
     <transmission name="tran${n}">
