@@ -5,6 +5,10 @@
 <!-- =================================================================================== -->
 <!-- Open_Manipulator Chain -->
 <robot name="open_manipulator">
+  <!-- Import all Gazebo-customization elements, including Gazebo colors -->
+  <!--  <xacro:include filename="$(find open_manipulator_description)/urdf/open_manipulator.gazebo.xacro" />-->
+  <!-- Import Rviz colors -->
+  <!--<xacro:include filename="$(find open_manipulator_ign)/worlds/openManipulator/materials.xacro" />-->
   <material name="black">
     <color rgba="0.0 0.0 0.0 1.0"/>
   </material>
