@@ -2,28 +2,13 @@ cmake_minimum_required(VERSION 3.5)
 
 project(open_manipulator_ign)
 
-find_package(catkin REQUIRED COMPONENTS
-  roscpp
-  std_msgs
-  gazebo_ros
-  gazebo_ros_control
-  controller_manager
-  xacro
-  urdf
-)
-
 find_package(catkin REQUIRED)
+find_package(ignition-gazebo2 2.1 QUIET REQUIRED)
 
-catkin_package(
-  CATKIN_DEPENDS roscpp std_msgs gazebo_ros gazebo_ros_control controller_manager xacro urdf
-)
+catkin_package()
 
-link_directories(${GAZEBO_LIBRARY_DIRS})
-
-include_directories(
-  ${catkin_INCLUDE_DIRS}
-  ${GAZEBO_INCLUDE_DIRS}
-)
+catkin_add_env_hooks(ign SHELLS bash
+  DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/env-hooks)
 
 install(
   DIRECTORY
@@ -34,7 +19,14 @@ install(
 
 install(
   DIRECTORY
-    models/
+    rviz/
   DESTINATION
-    ${CATKIN_PACKAGE_SHARE_DESTINATION}/models
+    ${CATKIN_PACKAGE_SHARE_DESTINATION}/rviz
+)
+
+install(
+  DIRECTORY
+    worlds/openManipulator/
+  DESTINATION
+    ${CATKIN_PACKAGE_SHARE_DESTINATION}/worlds/openManipulator/
 )
