@@ -491,6 +491,10 @@
         </axis>
       </joint>
 
+      <plugin
+        filename="libignition-gazebo-joint-state-publisher-system.so"
+        name="ignition::gazebo::systems::JointStatePublisher">
+      </plugin>
     </model>
 
   </world>
