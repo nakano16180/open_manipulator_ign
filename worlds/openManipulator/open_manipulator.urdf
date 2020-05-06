@@ -60,14 +60,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link1.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link1.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <!--    <inertial>
@@ -98,14 +98,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0.019"/>
       <geometry>
-        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link2.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0.019"/>
       <geometry>
-        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link2.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link2.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <!--    <inertial>
@@ -136,14 +136,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link3.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link3.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link3.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <!--    <inertial>
@@ -174,14 +174,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link4.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link4.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link4.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link4.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <!--    <inertial>
@@ -212,14 +212,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link5.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link5.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0 0 0"/>
       <geometry>
-        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link5.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link5.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <!--    <inertial>
@@ -240,14 +240,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.0 0.0 0"/>
       <geometry>
-        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link_grip_l.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link_grip_l.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0.0 0.0 0"/>
       <geometry>
-        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link_grip_l.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link_grip_l.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <!--    <inertial>
@@ -278,14 +278,14 @@
     <visual>
       <origin rpy="0 0 0" xyz="0.0 -0.0 0"/>
       <geometry>
-        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link_grip_r.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link_grip_r.stl" scale="0.001 0.001 0.001"/>
       </geometry>
       <material name="grey"/>
     </visual>
     <collision>
       <origin rpy="0 0 0" xyz="0.0 -0.0 0"/>
       <geometry>
-        <mesh filename="/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link_grip_r.stl" scale="0.001 0.001 0.001"/>
+        <mesh filename="/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link_grip_r.stl" scale="0.001 0.001 0.001"/>
       </geometry>
     </collision>
     <!--    <inertial>
