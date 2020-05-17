@@ -1,4 +1,3 @@
-<?xml version='1.0'?>
 <sdf version='1.6'>
   <model name='open_manipulator'>
     <link name='link1'>
@@ -20,7 +19,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link1.stl</uri>
+            <uri>/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link1.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -29,7 +28,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link1.stl</uri>
+            <uri>/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link1.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -57,7 +56,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link2.stl</uri>
+            <uri>/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link2.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -66,7 +65,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link2.stl</uri>
+            <uri>/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link2.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -108,7 +107,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link3.stl</uri>
+            <uri>/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link3.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -117,7 +116,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link3.stl</uri>
+            <uri>/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link3.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -159,7 +158,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link4.stl</uri>
+            <uri>/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link4.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -168,7 +167,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link4.stl</uri>
+            <uri>/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link4.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -210,7 +209,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link5.stl</uri>
+            <uri>/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link5.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -219,7 +218,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link5.stl</uri>
+            <uri>/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link5.stl</uri>
           </mesh>
         </geometry>
       </visual>
@@ -250,7 +249,6 @@
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
-
     <link name='gripper_link'>
       <pose frame=''>0.2417 0.021 0.2045 0 -0 0</pose>
       <inertial>
@@ -270,7 +268,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link_grip_l.stl</uri>
+            <uri>/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link_grip_l.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -279,12 +277,11 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link_grip_l.stl</uri>
+            <uri>/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link_grip_l.stl</uri>
           </mesh>
         </geometry>
       </visual>
     </link>
-    
     <joint name='gripper' type='prismatic'>
       <child>gripper_link</child>
       <parent>link5</parent>
@@ -322,7 +319,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link_grip_r.stl</uri>
+            <uri>/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link_grip_r.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -331,7 +328,7 @@
         <geometry>
           <mesh>
             <scale>0.001 0.001 0.001</scale>
-            <uri>/home/kaito/ign_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link_grip_r.stl</uri>
+            <uri>/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link_grip_r.stl</uri>
           </mesh>
         </geometry>
       </visual>
