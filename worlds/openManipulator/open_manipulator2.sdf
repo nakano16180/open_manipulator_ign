@@ -99,7 +99,7 @@
         </visual>
       </link>
     </model>
-    
+
   <model name='open_manipulator'>
     <link name='link1'>
       <pose frame=''>0 0 0 0 -0 0</pose>
@@ -132,6 +132,11 @@
             <uri>/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link1.stl</uri>
           </mesh>
         </geometry>
+        <material>
+          <ambient>0.5 0.5 1.0 1</ambient>
+          <diffuse>0.5 0.5 1.0 1</diffuse>
+          <specular>0.5 0.5 0.5 1.0</specular>
+        </material>
       </visual>
     </link>
     <joint name='world_fixed' type='fixed'>
@@ -169,6 +174,11 @@
             <uri>/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link2.stl</uri>
           </mesh>
         </geometry>
+        <material>
+          <ambient>0.5 0.5 1.0 1</ambient>
+          <diffuse>0.5 0.5 1.0 1</diffuse>
+          <specular>0.5 0.5 0.5 1.0</specular>
+        </material>
       </visual>
     </link>
     <joint name='joint1' type='revolute'>
@@ -220,6 +230,11 @@
             <uri>/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link3.stl</uri>
           </mesh>
         </geometry>
+        <material>
+          <ambient>0.5 0.5 1.0 1</ambient>
+          <diffuse>0.5 0.5 1.0 1</diffuse>
+          <specular>0.5 0.5 0.5 1.0</specular>
+        </material>
       </visual>
     </link>
     <joint name='joint2' type='revolute'>
@@ -271,6 +286,11 @@
             <uri>/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link4.stl</uri>
           </mesh>
         </geometry>
+        <material>
+          <ambient>0.5 0.5 1.0 1</ambient>
+          <diffuse>0.5 0.5 1.0 1</diffuse>
+          <specular>0.5 0.5 0.5 1.0</specular>
+        </material>
       </visual>
     </link>
     <joint name='joint3' type='revolute'>
@@ -322,6 +342,11 @@
             <uri>/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link5.stl</uri>
           </mesh>
         </geometry>
+        <material>
+          <ambient>0.5 0.5 1.0 1</ambient>
+          <diffuse>0.5 0.5 1.0 1</diffuse>
+          <specular>0.5 0.5 0.5 1.0</specular>
+        </material>
       </visual>
       <visual name='link5_fixed_joint_lump__end_effector_link_visual_1'>
         <pose frame=''>0.126 0 0 0 -0 0</pose>
@@ -350,6 +375,7 @@
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
+
     <link name='gripper_link'>
       <pose frame=''>0.2417 0.021 0.2045 0 -0 0</pose>
       <inertial>
@@ -381,8 +407,14 @@
             <uri>/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link_grip_l.stl</uri>
           </mesh>
         </geometry>
+        <material>
+          <ambient>0.5 0.5 1.0 1</ambient>
+          <diffuse>0.5 0.5 1.0 1</diffuse>
+          <specular>0.5 0.5 0.5 1.0</specular>
+        </material>
       </visual>
     </link>
+    
     <joint name='gripper' type='prismatic'>
       <child>gripper_link</child>
       <parent>link5</parent>
@@ -432,6 +464,11 @@
             <uri>/home/kaito/catkin_ws/src/open_manipulator_ign/models/openmanipulator/meshes/chain_link_grip_r.stl</uri>
           </mesh>
         </geometry>
+        <material>
+          <ambient>0.5 0.5 1.0 1</ambient>
+          <diffuse>0.5 0.5 1.0 1</diffuse>
+          <specular>0.5 0.5 0.5 1.0</specular>
+        </material>
       </visual>
     </link>
     <joint name='gripper_sub' type='prismatic'>
@@ -452,5 +489,7 @@
         <use_parent_model_frame>1</use_parent_model_frame>
       </axis>
     </joint>
+  
   </model>
+  </world>
 </sdf>
