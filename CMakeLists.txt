@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.5)
 project(open_manipulator_ign)
 
 find_package(catkin REQUIRED)
-find_package(ignition-gazebo2 2.1 QUIET REQUIRED)
+find_package(ignition-gazebo3 3.1 QUIET REQUIRED)
 
 catkin_package()
 
