@@ -26,7 +26,7 @@ install(
 
 install(
   DIRECTORY
-    worlds/openManipulator/
+    models/openManipulator/
   DESTINATION
-    ${CATKIN_PACKAGE_SHARE_DESTINATION}/worlds/openManipulator/
+    ${CATKIN_PACKAGE_SHARE_DESTINATION}/models/openManipulator/
 )

@@ -12,7 +12,7 @@
 
   <!-- SDF from file, package model -->
   <include file="$(find ros_ign_gazebo)/launch/ign_gazebo.launch">
-    <arg name="ign_args" value="-r -v 3 $(find open_manipulator_ign)/worlds/openManipulator/open_manipulator.sdf"/>
+    <arg name="ign_args" value="-r -v 3 $(find open_manipulator_ign)/models/openManipulator/open_manipulator.sdf"/>
   </include>
 
   <!-- URDF from param, package model -->
