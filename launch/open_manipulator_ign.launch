@@ -1,30 +1,23 @@
 <?xml version="1.0"?>
 <launch>
-  
-  <arg name="use_robot_name" default="open_manipulator"
-       doc="Must match the robotNamespace tag in the gazebo description file"/>
+
   <arg name="world" default="empty"/>
   <arg name="ign_args" default=""/>
 
+  <include file="$(find ros_ign_gazebo)/launch/ign_gazebo.launch">
+    <arg name="ign_args" value="-r -v 3 $(arg world).sdf"/>
+  </include>
+
   <!--<include file="$(find ros_ign_gazebo)/launch/ign_gazebo.launch">
-    <arg name="ign_args" value="$(arg ign_args) $(arg world).sdf"/>
+    <arg name="ign_args" value="-r -v 3 $(find open_manipulator_ign)/worlds/openManipulator.world"/>
   </include>-->
 
   <!-- SDF from file, package model -->
-  <include file="$(find ros_ign_gazebo)/launch/ign_gazebo.launch">
-    <arg name="ign_args" value="-r -v 3 $(find open_manipulator_ign)/models/openManipulator/open_manipulator.sdf"/>
-  </include>
-
-  <!-- URDF from param, package model -->
-  <!--<param name="robot_description" textfile="$(find open_manipulator_ign)/worlds/openManipulator/open_manipulator.urdf" />
-
   <node
     pkg="ros_ign_gazebo"
     type="create"
-    name="$(anon ros_ign_create_manipulator)"
+    name="$(anon open_manipulator_ign)"
     output="screen"
-    args="-world $(arg world) -param robot_description -name spawned -allow_renaming true -z 0">
-  </node>-->
-
-
+    args="-world $(arg world) -file $(find open_manipulator_ign)/models/openManipulator/open_manipulator_on_world.sdf -name spawned -allow_renaming true -z 0">
+  </node>
 </launch>
