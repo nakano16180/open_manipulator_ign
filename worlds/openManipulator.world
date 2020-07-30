@@ -102,8 +102,8 @@
     </model>
     
     <include>
+      <uri>model://openManipulator</uri>
       <pose>0 0 0 0 0 0</pose>
-      <uri>openManipulator</uri>
     </include>
 
   </world>
