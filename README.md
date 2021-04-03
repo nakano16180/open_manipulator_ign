@@ -8,8 +8,8 @@ $ sudo apt install ros-eloquent-xacro
 
 ```
 $ mkdir -p ~/catkin_ws/src && cd ~/catkin_ws/src/
-$ git clone git@github.com:nakano16180/open_manipulator_ign.git
 $ git clone git@github.com:ignitionrobotics/ros_ign.git
+$ git clone git@github.com:nakano16180/open_manipulator_ign.git
 
 $ cd ~/ign_ws/src/open_manipulator_ign/models/openManipulator/urdf/
 $ ros2 run xacro xacro --inorder -o open_manipulator.urdf open_manipulator.urdf.xacro 
@@ -35,7 +35,7 @@ $ cd ~/catkin_ws/ && catkin build
 ```
 
 
-### run
+#### run
 
 ```
 $ source ~/catkin_ws/devel/setup.bash 
